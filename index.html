@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#100711">
+<title>For Tanu — 7 September ♡</title>
+<style>
+:root{
+ --bg:#0d0610;--card:rgba(255,255,255,.065);--line:rgba(255,255,255,.13);
+ --pink:#ff9dca;--pink2:#ffd3e7;--text:#fff7fb;--muted:#cbb8c8;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--text);font-family:Georgia,"Times New Roman",serif;background:
+radial-gradient(circle at 50% -10%,#54204f 0,#220d25 32%,#0d0610 72%);min-height:100vh;overflow-x:hidden}
+button,a{font:inherit}.bg,.hearts{position:fixed;inset:0;pointer-events:none}.bg{z-index:0;overflow:hidden}
+.glow{position:absolute;border-radius:50%;filter:blur(70px);opacity:.18}
+.g1{width:260px;height:260px;background:#ff69ae;top:8%;left:-80px}.g2{width:220px;height:220px;background:#9b5cff;right:-80px;top:45%}
+.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:.7;animation:twinkle 3s infinite}
+@keyframes twinkle{50%{opacity:.12;transform:scale(.4)}}
+main{position:relative;z-index:1;max-width:920px;margin:auto;padding:0 17px 65px}
+.screen{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero-inner{max-width:650px}
+.kicker{font:600 11px/1 Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:#f6a9ce}
+h1{font-size:clamp(58px,16vw,120px);font-weight:400;line-height:.82;margin:22px 0 20px}
+h1 em{font-style:normal;color:var(--pink)}
+.hero-copy{font:15px/1.8 Arial,sans-serif;color:var(--muted);max-width:570px;margin:auto}
+.btn{
+border:1px solid rgba(255,169,211,.55);background:linear-gradient(135deg,#ff9dca22,#ffffff0a);
+color:#fff;padding:13px 21px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;
+transition:.25s;box-shadow:0 8px 35px #0005;backdrop-filter:blur(10px);margin:10px 5px
+}
+.btn:hover{transform:translateY(-3px);background:#ff9dca;color:#180914}
+.btn.small{padding:10px 15px;font-size:13px}
+.scrollhint{margin-top:22px;color:#8f7b8c;font:12px Arial,sans-serif;letter-spacing:1px}
+section{padding:65px 0}.section-head{text-align:center;margin-bottom:28px}
+.eyebrow{font:600 11px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#ef9fc5}
+h2{font-size:39px;font-weight:400;margin:8px 0}.sub{font:14px/1.7 Arial,sans-serif;color:var(--muted)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:30px;padding:28px;box-shadow:0 25px 90px #0007;backdrop-filter:blur(15px)}
+.letter{font-size:19px;line-height:1.9;color:#f8e9f2}
+.signature{margin-top:22px;color:var(--pink);font-size:24px}
+.locked-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.mystery{
+min-height:180px;border-radius:24px;border:1px solid #ffffff18;background:
+linear-gradient(145deg,#ffffff0a,#ff9dca08);display:flex;flex-direction:column;align-items:center;justify-content:center;
+text-align:center;padding:20px;position:relative;overflow:hidden
+}
+.mystery .icon{font-size:35px;margin-bottom:12px}.mystery h3{margin:0 0 8px;font-size:20px;font-weight:400}
+.mystery p{margin:0 0 10px;font:12px/1.5 Arial;color:#bba9b8}
+.reveal{display:none}.revealed .cover{display:none}.revealed .reveal{display:block;animation:appear .55s ease}
+@keyframes appear{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.frame{position:relative;border-radius:25px;overflow:hidden;min-height:260px;background:#160b18;border:1px solid #ffffff18}
+.frame:nth-child(3),.frame:nth-child(4){min-height:330px}
+.frame img{width:100%;height:100%;min-height:260px;object-fit:cover;display:block;transition:transform .6s}
+.frame:hover img{transform:scale(1.035)}
+.caption{position:absolute;left:12px;right:12px;bottom:12px;padding:11px 13px;border-radius:16px;background:#0b050dcc;backdrop-filter:blur(8px);font:12px Arial;color:#ffeaf5}
+.video-list{display:grid;gap:18px}
+.video-card{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:center;padding:16px;border:1px solid #ffffff12;border-radius:24px;background:#ffffff07}
+.video-thumb{height:105px;border-radius:17px;overflow:hidden;background:#140a17;position:relative}
+.video-thumb video{width:100%;height:100%;object-fit:cover}
+.play{position:absolute;inset:0;display:grid;place-items:center;font-size:28px;background:#0004}
+.video-info h3{font-size:22px;font-weight:400;margin:0 0 7px}.video-info p{font:13px/1.55 Arial;color:var(--muted);margin:0 0 10px}
+.video-full{display:none;margin-top:15px}.video-card.open .video-full{display:block;animation:appear .45s ease}
+.video-full video{width:100%;max-height:520px;border-radius:20px;background:#000}
+.timeline{display:grid;gap:12px}
+.step{display:flex;gap:15px;align-items:flex-start;padding:17px;border-radius:20px;background:#ffffff07;border:1px solid #ffffff10}
+.num{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#ff9dca22;color:#ffb4d6;font:600 13px Arial;flex:0 0 auto}
+.step strong{font:600 14px Arial}.step span{display:block;color:#bbaab8;font:12px/1.5 Arial;margin-top:4px}
+.count{font:44px Arial;color:#ffd0e4;letter-spacing:2px;margin:15px 0}
+.final{text-align:center;padding:90px 0 20px}.final h2{font-size:clamp(40px,10vw,70px)}
+.secret{display:none;margin:20px auto 0;max-width:600px;padding:25px;border-radius:25px;background:#ff9dca10;border:1px solid #ff9dca3b}
+.secret.show{display:block;animation:appear .6s ease}
+.secret p{font:16px/1.8 Arial;color:#f7e3ef}
+.footer{text-align:center;color:#766575;font:11px Arial;margin-top:45px}
+.modal{position:fixed;inset:0;background:#050207dd;display:none;align-items:center;justify-content:center;padding:18px;z-index:50}
+.modal.show{display:flex}.modalbox{max-width:680px;width:100%;max-height:88svh;overflow:auto;background:#160b18;border:1px solid #ffffff1c;border-radius:28px;padding:24px;text-align:center;box-shadow:0 30px 100px #000}
+.modalbox img{max-width:100%;max-height:65svh;border-radius:18px;object-fit:contain}.close{float:right}
+@media(max-width:650px){
+ .locked-grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}
+ .frame,.frame:nth-child(3),.frame:nth-child(4){min-height:360px}
+ .video-card{grid-template-columns:1fr}.video-thumb{height:180px}.panel{padding:21px}
+}
+</style>
+</head>
+<body>
+<div class="bg"><div class="glow g1"></div><div class="glow g2"></div><div id="stars"></div></div>
+<div class="hearts" id="hearts"></div>
+
+<main>
+<section class="screen" id="top">
+<div class="hero-inner">
+<div class="kicker">7 September • a little surprise</div>
+<h1>For <em>Tanu</em> ♡</h1>
+<p class="hero-copy">I could have just said “Happy Birthday”… but that felt way too ordinary. So I made you a little world to explore.</p>
+<div style="margin-top:26px"><button class="btn" onclick="start()">✨ Start the surprise</button></div>
+<div class="scrollhint">There are secrets hidden below ↓</div>
+</div>
+</section>
+
+<section id="letter">
+<div class="section-head"><div class="eyebrow">First surprise</div><h2>Before anything else… 💌</h2><div class="sub">Tap the button when you're ready.</div></div>
+<div class="panel" style="text-align:center">
+<button class="btn" id="letterBtn" onclick="openLetter()">Open the envelope ✉️</button>
+<div id="letterText" style="display:none;text-align:left;margin-top:20px">
+<div class="letter">
+Happy Birthday, Tanu! ✨<br><br>
+Today is your day, and I hope it brings you the kind of happiness that stays long after the candles are gone.
+<br><br>
+I didn't want this to be just another birthday message. I wanted to make you something you could open, explore, and smile at—one little surprise at a time.
+<br><br>
+I hope this year gives you beautiful moments, lots of laughter, peaceful days, and plenty of reasons to smile.
+<br><br>
+And whenever you look back at this page, I hope it reminds you that someone thought you were worth turning a normal webpage into a whole little birthday adventure for. ♡
+<div class="signature">— Krish</div>
+</div></div>
+</div>
+</section>
+
+<section id="mysteries">
+<div class="section-head"><div class="eyebrow">Don't open everything at once 👀</div><h2>Three mystery doors</h2><div class="sub">Each one hides something different.</div></div>
+<div class="locked-grid">
+<div class="mystery" id="door1"><div class="cover"><div class="icon">🌙</div><h3>Little Wish</h3><p>There is a message hiding here.</p><button class="btn small" onclick="door(1)">Unlock</button></div><div class="reveal"><div class="icon">🌙</div><h3>My wish for you</h3><p>May your next year be full of moments that make you genuinely happy.</p></div></div>
+<div class="mystery" id="door2"><div class="cover"><div class="icon">🗝️</div><h3>Secret Question</h3><p>Tap to reveal the answer.</p><button class="btn small" onclick="door(2)">Open</button></div><div class="reveal"><div class="icon">💗</div><h3>Who deserves a great birthday?</h3><p>Hint: you're looking at her name at the top of this page.</p></div></div>
+<div class="mystery" id="door3"><div class="cover"><div class="icon">✨</div><h3>One More Thing</h3><p>This one unlocks a little later.</p><button class="btn small" onclick="door(3)">Reveal</button></div><div class="reveal"><div class="icon">🎀</div><h3>You're officially special</h3><p>Not because of a website. Because you're you.</p></div></div>
+</div>
+</section>
+
+<section id="photos">
+<div class="section-head"><div class="eyebrow">Memory frames</div><h2>Four little moments 📸</h2><div class="sub">Each frame is one of the pieces of this surprise.</div></div>
+<div class="gallery">
+<div class="frame"><img src="media/photo1.jpg" alt="Tanu memory 1"><div class="caption">Frame 01 • A little smile ♡</div></div>
+<div class="frame"><img src="media/photo2.jpg" alt="Tanu memory 2"><div class="caption">Frame 02 • Another little moment ✨</div></div>
+<div class="frame"><img src="media/photo3.jpg" alt="Birthday message memory"><div class="caption">Frame 03 • A message worth keeping 💌</div></div>
+<div class="frame"><img src="media/photo4.jpg" alt="Tanu memory 4"><div class="caption">Frame 04 • One more for the collection 🌙</div></div>
+</div>
+</section>
+
+<section id="videos">
+<div class="section-head"><div class="eyebrow">Now for the moving memories</div><h2>Three videos 🎬</h2><div class="sub">Tap each “Play surprise” button to reveal it.</div></div>
+<div class="video-list">
+<div class="video-card" id="vid1"><div class="video-thumb"><video src="media/video1.mp4" muted playsinline preload="metadata"></video><div class="play">▶</div></div><div class="video-info"><h3>Video 01</h3><p>A tiny moving memory, saved here just for today.</p><button class="btn small" onclick="openVideo(1)">▶ Play surprise</button></div><div class="video-full"><video id="v1" src="media/video1.mp4" controls playsinline></video></div></div>
+<div class="video-card" id="vid2"><div class="video-thumb"><video src="media/video2.mp4" muted playsinline preload="metadata"></video><div class="play">▶</div></div><div class="video-info"><h3>Video 02</h3><p>Because photos aren't always enough.</p><button class="btn small" onclick="openVideo(2)">▶ Reveal video</button></div><div class="video-full"><video id="v2" src="media/video2.mp4" controls playsinline></video></div></div>
+<div class="video-card" id="vid3"><div class="video-thumb"><video src="media/video3.mp4" muted playsinline preload="metadata"></video><div class="play">▶</div></div><div class="video-info"><h3>Video 03</h3><p>Okay… one last video before the final surprise.</p><button class="btn small" onclick="openVideo(3)">▶ Open the last one</button></div><div class="video-full"><video id="v3" src="media/video3.mp4" controls playsinline></video></div></div>
+</div>
+</section>
+
+<section>
+<div class="section-head"><div class="eyebrow">Your birthday timeline</div><h2>Unlock the little things</h2><div class="sub">There's no rush. Take your time.</div></div>
+<div class="panel timeline">
+<div class="step"><div class="num">1</div><div><strong>Open the letter</strong><span>Start with the message made for you.</span></div></div>
+<div class="step"><div class="num">2</div><div><strong>Explore the mystery doors</strong><span>Three tiny surprises are waiting.</span></div></div>
+<div class="step"><div class="num">3</div><div><strong>Look through the frames</strong><span>Four photos, four little pieces of the page.</span></div></div>
+<div class="step"><div class="num">4</div><div><strong>Play the videos</strong><span>Three moving memories to finish the journey.</span></div></div>
+<div class="step"><div class="num">5</div><div><strong>Find the final surprise</strong><span>It's waiting at the bottom. ♡</span></div></div>
+</div>
+</section>
+
+<section class="final" id="final">
+<div class="eyebrow">You made it this far…</div>
+<h2>One last surprise, Tanu.</h2>
+<p class="sub">Don't tap this until you've explored the page. 😌</p>
+<button class="btn" onclick="finalReveal()">🎁 Open the final surprise</button>
+<div class="secret" id="secret">
+<div style="font-size:42px">🎂 ✨ 💗 ✨ 🎂</div>
+<h2 style="font-size:35px">Happy Birthday, Tanu!</h2>
+<p>May this new year of your life bring you more laughter, more beautiful days, and more moments you'll want to keep forever.</p>
+<p style="color:#ffafd2;font-size:18px">And yes… I made an entire website just to say it. ♡</p>
+<p style="color:#ffe1ed">— Krish</p>
+</div>
+</section>
+
+<div class="footer">Made with ♡ by Krish • for Tanu • 7 September</div>
+</main>
+
+<div class="modal" id="modal" onclick="closeModal(event)">
+<div class="modalbox">
+<button class="btn small close" onclick="closeModal()">✕</button>
+<h2 style="font-size:30px">A little extra frame ✨</h2>
+<p class="sub">Just because four photos deserved a closer look.</p>
+<img src="media/photo3.jpg" alt="Extra photo">
+</div></div>
+
+<script>
+const stars=document.getElementById('stars');
+for(let i=0;i<100;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=(Math.random()*3)+'s';stars.appendChild(s)}
+function start(){burst(16);document.getElementById('letter').scrollIntoView({behavior:'smooth'})}
+function openLetter(){document.getElementById('letterText').style.display='block';document.getElementById('letterBtn').textContent='♡ Opened';burst(10)}
+function door(n){document.getElementById('door'+n).classList.add('revealed');burst(7)}
+function openVideo(n){let card=document.getElementById('vid'+n);card.classList.add('open');let v=document.getElementById('v'+n);setTimeout(()=>v.play().catch(()=>{}),250);burst(8)}
+function finalReveal(){
+document.getElementById('secret').classList.add('show');burst(35);
+setTimeout(()=>document.getElementById('secret').scrollIntoView({behavior:'smooth',block:'center'}),150)
+}
+function burst(count){
+for(let i=0;i<count;i++)setTimeout(()=>{
+let h=document.createElement('span');h.textContent=['♡','♥','✦','✨'][Math.floor(Math.random()*4)];
+h.style.position='fixed';h.style.left=(15+Math.random()*70)+'vw';h.style.bottom='-20px';h.style.fontSize=(15+Math.random()*22)+'px';
+h.style.color=['#ff9dca','#ffd4e7','#fff'][Math.floor(Math.random()*3)];h.style.zIndex=80;h.style.pointerEvents='none';
+h.animate([{transform:'translateY(0) scale(.8)',opacity:0},{transform:'translateY(-35vh) scale(1.2)',opacity:1},{transform:'translateY(-85vh) scale(.7)',opacity:0}],{duration:2600+Math.random()*1200,easing:'ease-out'});
+document.body.appendChild(h);setTimeout(()=>h.remove(),4000)
+},i*45)
+}
+function closeModal(e){if(!e||e.target.id==='modal'||e.target.classList.contains('close'))document.getElementById('modal').classList.remove('show')}
+</script>
+</body>
+</html>
